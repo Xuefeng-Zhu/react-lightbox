@@ -1,0 +1,65 @@
+@import 'baseinc';
+
+.LightboxHeader {
+  $height: 60px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -$height;
+  width: 100%;
+  background-color: #000;
+  transition: top 0.3s ease;
+  height: $height;
+
+  .left, .right {
+    display: flex;
+    width: 200px;
+    align-items: center;
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+
+  &.loaded {
+    top: 0px;
+  }
+
+  .download {
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    padding: 4px 25px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    
+    &:hover {
+      background-color: white;
+      color: #111;
+      cursor: pointer;
+    }
+  }
+
+  .caption {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .close {
+    margin-left: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+    i {
+      font-size: 40px;
+      padding: 0px 10px;
+      color: white;
+    }
+  }
+}

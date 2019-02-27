@@ -1,0 +1,10 @@
+@import 'baseinc';
+
+.Lightbox {
+  cursor: zoom-in;
+
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
